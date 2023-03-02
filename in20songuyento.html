@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+let m=parseInt(prompt('nhap so so nguyen to can nhap',''));
+let count =0;
+let n=0;
+for ( i=2;i<=1000;i++) {
+    for ( j=1;j<=i/2;j++) {
+            if (i%j==0) {
+                count +=1;
+            }
+    }             if (count==1) {
+        document.write(i +'<br>');
+        n++;
+    } count=0;
+    if (m==n) {
+        break;
+    }
+}
+
+
+
+
+</script>
+</body>
+</html>
